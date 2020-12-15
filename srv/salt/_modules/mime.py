@@ -131,8 +131,7 @@ def send_msg(recipient,
     recipients = _sanitize_recipient(recipient)
 
     msg.attach(html)
-    lamp_env = __salt__['pillar.get']('lamp:lamp_env').upper()
-    msg['Subject'] = '{}-{}'.format(lamp_env, subject)
+    msg['Subject'] = '{}'.format(subject)
     msg['From'] = sender
     msg['To'] = recipient
 
