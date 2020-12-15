@@ -1,0 +1,6 @@
+<p>Hi <strong><em>{{ name }}</em></strong>.</p>
+
+ <p> Test E-mail from SaltStack server<br/>
+ Name: <strong><em>{{ description }}</em></strong> <br/>
+
+If you get this e-mail then mail mime.py is working fine.

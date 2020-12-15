@@ -1,0 +1,15 @@
+<p>Hello Lab Admins,</p>
+
+<p>Salt has <strong><em>DENIED</em></strong> a client connection from an unregistered Minion</p>
+
+<p>The Linux device below trying to connect to SaltStack, but is not <strong><em>registered</em></strong> in LAMP.<br/>
+Minion ID: <strong><em>{{ minion_id }}</em></strong> <br/>
+</p>
+
+<p><strong><em>Action Required: </strong></em></br>
+Code has deleted the offending minion for now ! using salt-key -d <minion_id> </br>
+<p>There are multiple reasons that this is possible.</br>
+1. User has re-built his system and Salt-Key still has his old registration (delete both entries) </br>
+2. User has deleted the minion from LAMP, but not disabled the agent. (Manually register minion to user again)</br>
+3. Minion has been offline for more than 30 days and has been removed from LAMP (manual or auto cleanup) </br>
+</p>

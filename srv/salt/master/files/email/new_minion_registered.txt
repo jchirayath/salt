@@ -1,0 +1,6 @@
+<p>Hello Lab Admins,</p>
+
+<p>Salt has accepted a client connection from a new Minion</p>
+
+<p>The Linux device below has been <strong><em>registered</em></strong><br/>
+Minion ID: <strong><em>{{ minion_id }}</em></strong> <br/>
